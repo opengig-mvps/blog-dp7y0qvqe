@@ -1,0 +1,77 @@
+{
+  "items": [
+    {
+      "url": "/page.tsx",
+      "type": "page",
+      "status": "success",
+      "access": "public",
+      "userType": "all"
+    },
+    {
+      "url": "/api/blogs",
+      "type": "api",
+      "status": "success",
+      "method": "POST"
+    },
+    {
+      "url": "/api/blogs/{blogId}",
+      "type": "api",
+      "status": "success",
+      "method": "PATCH"
+    },
+    {
+      "url": "/api/payments/stripe/create-session",
+      "type": "api",
+      "status": "success",
+      "method": "POST"
+    },
+    {
+      "url": "/api/payments/stripe/webhook",
+      "type": "api",
+      "status": "error",
+      "method": "POST",
+      "error": "Failed to generate API code after 3 attempts"
+    },
+    {
+      "url": "/api/blogs/{blogId}/access",
+      "type": "api",
+      "status": "success",
+      "method": "GET"
+    },
+    {
+      "url": "dashboard/user/blogs/create/page.tsx",
+      "type": "page",
+      "status": "success",
+      "userType": "user",
+      "access": "private"
+    },
+    {
+      "url": "dashboard/user/blogs/page.tsx",
+      "type": "page",
+      "status": "error",
+      "userType": "user",
+      "access": "private"
+    },
+    {
+      "url": "dashboard/user/payments/page.tsx",
+      "type": "page",
+      "status": "success",
+      "userType": "user",
+      "access": "private"
+    },
+    {
+      "url": "/(auth)/register/page.tsx",
+      "type": "page",
+      "status": "success",
+      "access": "public",
+      "userType": "all"
+    },
+    {
+      "url": "/(auth)/login/page.tsx",
+      "type": "page",
+      "status": "success",
+      "access": "public",
+      "userType": "all"
+    }
+  ]
+}
